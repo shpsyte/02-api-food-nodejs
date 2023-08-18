@@ -1,0 +1,70 @@
+
+@baseUrl = http://localhost:3333
+
+
+
+
+### Get Users by CPF
+GET {{ baseUrl }}/user/all
+Content-Type: application/json
+
+
+### me
+GET {{ baseUrl }}/user/me
+Content-Type: application/json
+
+
+
+
+### POST User
+POST {{ baseUrl }}/user/create
+Content-Type: application/json
+
+{
+    "name": "User Name",
+    "email": "user1@user1.com"
+}
+
+
+##############
+GET {{ baseUrl }}/food/all
+Content-Type: application/json
+
+### get one
+### Get Users by ID
+GET {{ baseUrl }}/food/053121f6-4b1e-4409-a3f7-d7e446a6ce66
+Content-Type: application/json
+
+
+### POST Food
+POST {{ baseUrl }}/food/create
+Content-Type: application/json
+
+{
+    "name": "Food Name",
+    "description": "Food Description",
+    "is_diet": true
+}
+
+### UPDATE FOOD
+
+PUT {{ baseUrl }}/food/update/da51de7f-7e74-4737-9464-4ba365a097af
+Content-Type: application/json
+
+{
+    "name": "Food Name asdfasd2",
+    "description": "Food Description",
+    "is_diet": true
+}
+
+
+### DELETE
+
+DELETE  {{ baseUrl }}/food/delete/da51de7f-7e74-4737-9464-4ba365a097af
+Content-Type: application/json
+
+{
+    "name": "Food Name asdfasd2",
+    "description": "Food Description",
+    "is_diet": true
+}

@@ -1,0 +1,4 @@
+/node_modules
+/coverage
+src/infra/database/food_teste.db
+.env
